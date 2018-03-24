@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>轮播图</title>
+    <style>
+        body,div,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            margin: 0 auto;
+            width: 1000px;
+            border: 2px solid #f00;
+            overflow: hidden;
+        }
+        #imgbox li{
+            list-style: none;
+            float: left;
+        }
+        li img{
+            width: 200px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="box">
+        <ul id="imgbox">
+            <li><img src="images/1.jpg" alt=""></li>
+            <li><img src="images/2.jpg" alt=""></li>
+            <li><img src="images/3.jpg" alt=""></li>
+            <li><img src="images/4.jpg" alt=""></li>
+            <li><img src="images/5.jpg" alt=""></li>
+        </ul>
+    </div>
 </body>
 </html>
