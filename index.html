@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>轮播图</title>
+    <title>无缝滚动</title>
     <style>
         body,div,ul,li{
             margin: 0;
@@ -12,7 +12,7 @@
         }
         #box{
             margin: 0 auto;
-            margin-top: 100px;
+            margin-top: 50px;
             width: 1200px;
             height: 172px;
             border: 2px solid #f00;
@@ -32,6 +32,23 @@
             width: 240px;
             vertical-align: middle;
         }
+        div{
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 1200px;
+            border: 2px solid #f00;
+            position: relative;
+        }
+        div h3{
+            text-align: center;
+        }
+        section{
+            width: 260px;
+            margin: 0 auto;
+        }
+        section p{
+            font: 16px/1em 微软雅黑;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +61,16 @@
             <li><img src="images/5.jpg" alt=""></li>
         </ul>
     </div>
+    <div>
+        <h3>第一个提交到GitHub上的项目</h3>
+        <section>
+            <p>just do IT</p>
+            <p>好好学习，天天向上</p>
+            <p>态度决定一切</p>
+            <p>快乐学习，轻松就业</p>
+            <p>月薪15k</p>
+        </section>
+    </div>
 </body>
 <script>
     var box=document.getElementById("box");
@@ -52,7 +79,7 @@
     var num=0;
     function move(){
         num--;
-        num<=-1000? num=0:num;
+        num<=-1200? num=0:num;
         imgbox.style.left=num+"px";
         // alert(num);
     }
